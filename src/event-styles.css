@@ -1,0 +1,86 @@
+.visual-config-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}
+.visual-config-tabs button{padding-inline:2px;font-size:10px;white-space:nowrap}
+.event-mini{height:68px;margin:14px 0;display:flex;background:#0e1113;overflow:hidden;border:1px solid #879aa133}
+.event-mini i{width:60%;background:linear-gradient(125deg,#10191f,#75818955,#121719)}
+.event-mini b{width:30%;margin:17px 8px;background:repeating-linear-gradient(0deg,transparent 0 8px,#c3cdd46b 8px 9px)}
+.event-mini.immersive{background:linear-gradient(110deg,#0e1113 30%,#4d606e70 70%,#182027)}
+.event-mini.immersive i{width:10%;background:none}.event-mini.immersive b{width:35%}
+.event-archive-art{display:none}
+:root[data-event-style=immersive] .event-feature{display:block;position:relative;isolation:isolate;overflow:hidden;min-height:570px;background:#101517;border-block:1px solid #b5c9d52b}
+:root[data-event-style=immersive] .event-image{position:absolute;inset:0;z-index:-1;aspect-ratio:auto}
+:root[data-event-style=immersive] .event-image>img{width:100%;height:100%;object-fit:cover;object-position:75% 45%;filter:saturate(.82) brightness(.85);transform:scale(1.025);transition:transform 2s cubic-bezier(.2,.65,.25,1)}
+:root[data-event-style=immersive] .event-feature:hover .event-image>img{transform:scale(1.065)}
+:root[data-event-style=immersive] .event-image:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0c1114 0%,#0c1114f2 22%,#0c1114be 40%,#0c111438 72%),linear-gradient(0deg,#0c1114b3,transparent 40%);pointer-events:none}
+:root[data-event-style=immersive] .event-image-title{z-index:1;inset:auto 34px 28px auto;align-items:flex-end;text-align:right}
+:root[data-event-style=immersive] .event-image-title strong{display:none}
+:root[data-event-style=immersive] .event-image-title>span:first-child{font-size:9px;letter-spacing:4px}
+:root[data-event-style=immersive] .event-image-title .image-caption{position:static;margin-top:10px;font-size:9px}
+:root[data-event-style=immersive] .event-copy{padding:54px 5%;width:52%;background:none;position:relative}
+:root[data-event-style=immersive] .event-copy h3{--heading-base:86px;margin:24px 0;letter-spacing:2px;line-height:1.05}
+:root[data-event-style=immersive] .event-copy h3 br{display:none}
+:root[data-event-style=immersive] .event-copy h3 em{display:block;font-style:normal;color:#e1e6e9}
+:root[data-event-style=immersive] .event-date{font-size:16px;letter-spacing:2px}
+:root[data-event-style=immersive] .event-location{margin-top:12px;letter-spacing:3px}
+:root[data-event-style=immersive] .event-copy .fine-rule{margin:24px 0;width:52px;background:#c5d6e3;transition:width .8s}
+:root[data-event-style=immersive] .event-feature:hover .fine-rule{width:108px}
+:root[data-event-style=immersive] .event-copy .outline-button{margin-top:26px;min-width:220px;width:auto;background:#10191d40}
+:root[data-event-style=immersive] .event-copy .outline-button:hover{background:#d9dde0}
+:root[data-event-style=immersive] .event-archives{gap:24px;margin-top:24px}
+:root[data-event-style=immersive] .event-archives button{position:relative;display:grid;grid-template-columns:108px 1fr auto;grid-template-rows:1fr 1fr;gap:5px 20px;padding:16px 0;border-block:1px solid #afc1cf28;text-align:left;transition:border-color .4s}
+:root[data-event-style=immersive] .event-archives button:hover{border-color:#c5d6e38a}
+:root[data-event-style=immersive] .event-archive-art{display:block;width:108px;height:76px;object-fit:cover;grid-row:1/3;grid-column:1;filter:saturate(.8);align-self:center}
+:root[data-event-style=immersive] .archive-silver{background:linear-gradient(145deg,#0f1418 15%,#97a4ad 16%,#33414b 18%,#12171b 50%,#9caab3 51%,#37434c 53%,#0d1215 85%)}
+:root[data-event-style=immersive] .event-archives button>span:not(.event-archive-art):not(:last-child){grid-column:2;align-self:end;font:26px var(--heading-font);color:#d6dfe5}
+:root[data-event-style=immersive] .event-archives strong{grid-column:2;grid-row:2;font-size:12px;font-weight:400;align-self:start}
+:root[data-event-style=immersive] .event-archives small{grid-column:3;grid-row:1;align-self:end}
+:root[data-event-style=immersive] .event-archives button>span:last-child{grid-column:3;grid-row:2;font-size:10px;align-self:start;white-space:nowrap}
+@media(max-width:760px){
+ :root[data-event-style=immersive] .event-feature{min-height:690px}
+ :root[data-event-style=immersive] .event-image>img{object-position:65% top;height:56%}
+ :root[data-event-style=immersive] .event-image:after{background:linear-gradient(0deg,#0c1114 35%,#0c1114e6 48%,#0c111415 83%)}
+ :root[data-event-style=immersive] .event-copy{width:100%;padding:240px 24px 32px}
+ :root[data-event-style=immersive] .event-copy h3{--heading-base:57px;margin:18px 0}
+ :root[data-event-style=immersive] .event-copy h3 em{display:inline;margin-left:12px}
+ :root[data-event-style=immersive] .event-date{font-size:12px;letter-spacing:1px}
+ :root[data-event-style=immersive] .event-image-title{inset:20px 20px auto;align-items:flex-start;text-align:left}
+ :root[data-event-style=immersive] .event-archives{display:grid;grid-template-columns:1fr;gap:12px}
+ :root[data-event-style=immersive] .event-archives button{grid-template-columns:72px 1fr auto;gap:5px 12px}
+ :root[data-event-style=immersive] .event-archive-art{width:72px;height:70px}
+ :root[data-event-style=immersive] .event-archives button>span:last-child .arrow{display:none}
+}
+@media(prefers-reduced-motion:reduce){:root[data-event-style=immersive] .event-feature *{transition:none!important}:root[data-event-style=immersive] .event-image>img{transform:none!important}}
+@media(max-width:760px){
+ :root[data-event-style=immersive] .event-image>img{mask-image:linear-gradient(180deg,#000 0%,#000 45%,transparent 100%)}
+}
+
+/* Landscape campaign artwork; official dates remain live page text. */
+.events-section .event-image>img{object-fit:cover;object-position:83% center}
+.events-section .event-image-title{display:none}
+:root[data-event-style=immersive] .event-image>img{object-position:center;filter:none;transform:scale(1.01)}
+:root[data-event-style=immersive] .event-image:after{background:linear-gradient(90deg,#0c11144d,transparent 60%)}
+:root[data-event-style=immersive] .event-feature:hover .event-image>img{transform:scale(1.035)}
+:root[data-event-style=immersive] img.event-archive-art{object-fit:contain;background:#080b0d;filter:none}
+@media(max-width:760px){
+ :root[data-event-style=immersive] .event-image>img{object-position:85% top;height:56%;mask-image:linear-gradient(180deg,#000 0%,#000 45%,transparent 100%)}
+ :root[data-event-style=immersive] .event-image:after{background:linear-gradient(0deg,#0c1114 32%,transparent 72%)}
+}
+@media(prefers-reduced-motion:reduce){:root[data-event-style=immersive] .event-feature .event-image>img{transform:none!important}}
+@media(min-width:761px){
+ :root[data-event-style=immersive] .event-feature{aspect-ratio:2/1}
+ :root[data-event-style=immersive] .event-image>img{transform:none}
+ :root[data-event-style=immersive] .event-feature:hover .event-image>img{transform:scale(1.015)}
+}
+
+/* Cohesive archive covers, cropped to keep their subjects readable at thumbnail size. */
+:root[data-event-style=immersive] img.event-archive-art{object-fit:cover;border:1px solid #b5c9d529;transition:filter .5s}
+:root[data-event-style=immersive] img.archive-trophy{object-position:95% center}
+:root[data-event-style=immersive] img.archive-table{object-position:90% center;filter:saturate(.7)}
+:root[data-event-style=immersive] .event-archives button:hover img.event-archive-art{filter:brightness(1.12)}
+
+/* Individually frame both silver awards at the center of their covers. */
+:root[data-event-style=immersive] img.archive-trophy{width:108px;height:76px}
+:root[data-event-style=immersive] img.archive-trophy,:root[data-event-style=immersive] img.archive-sculpture{object-fit:cover;object-position:100% center}
+@media(max-width:760px){:root[data-event-style=immersive] img.archive-trophy{width:72px;height:70px}}
+
+:root[data-event-style=immersive] img.archive-trophy{object-view-box:inset(0% 0% 0% 48%);object-position:center}
+:root[data-event-style=immersive] img.archive-sculpture{object-view-box:inset(5% 12% 10% 52%);object-position:center}

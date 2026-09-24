@@ -1,0 +1,19 @@
+# 首屏 3D 视觉方向 · 第四轮
+
+使用内置 Image Gen 生成 3D 渲染风格位图，并非可编辑 3D 模型。新增两项，保留银光切面和其他现有选项。输出只做 WebP 转换与缩略图缩放。
+
+## 银冠悬境
+
+保存路径：`public/assets/hero-orbit-v4.webp`；缩略图：`public/assets/hero-orbit-v4-thumb.webp`。
+
+最终提示词：
+
+Use case: stylized-concept. Create a striking luxury contemporary sports brand campaign CGI key visual, landscape 1536x1024, background image only without text. This is intentionally high-end art-directed 3D rendering, NOT photography. One impeccably designed OPEN SILVER CROWN with six slender architectural points, floating and tilted diagonally about 30 degrees in space on the RIGHT half. View the crown from slightly below at a 3/4 angle, reveal hollow interior, interlocking curved ribbon structural details; elegant low profile wide ring rather than tall medieval crown. Crown occupies about 43% frame width and 47% frame height, centered x76% y52%; visually substantial yet balanced. Highly refined PBR platinum materials: brushed titanium exterior alternating polished chrome edges and satin inner faces, physically accurate reflections, convincing thickness, premium industrial design. Background continuous near-black graphite with a very subtle cool silver illuminated atmosphere behind object, left 45% beautifully calm dark negative space for an oversized website headline. Beneath crown a single large curving graphite ribbon plane enters from lower right and sweeps out of frame, soft broad contactless shadow creates spatial scale, not a pedestal, not a room. Strong asymmetric composition, diagonal energy and graceful silhouette. Ray-traced studio rendering, soft huge area light above left, razor-thin white rim on far right, dark reflective regions preserved, restrained luxury advertising similar high-end watch campaign. Crisp silhouette with delicate material microtexture, no noise. No gold, gems, throne, marble plinth, palace, casino props, confetti, excessive lens flare, smoke, text, watermark, logos, UI, fake sparks or neon. Avoid enormous foreground object occupying entire image; do not use tiny isolated crown.
+
+## 荣耀之形
+
+保存路径：`public/assets/hero-monolith-v4.webp`；缩略图：`public/assets/hero-monolith-v4-thumb.webp`。
+
+最终提示词：
+
+Use case: stylized-concept. Create a luxurious and bold contemporary 3D rendered brand campaign key visual for an elite poker championship, landscape 1536x1024. Deliberately sculptural CGI, NOT a photographic scene. One bespoke SILVER TROPHY on RIGHT half, formed by three tapering fluid titanium blades rising from a narrow stem and unfurling into an open crown-like top, sophisticated minimal trophy design, clean strong silhouette. The trophy is subtly inclined diagonally rather than a straight upright catalog shot; center x76% y52%, height about 62% of image, width about 28%, full upper rim visible. Trophy geometry blends polished mirror silver edges with fine satin-brushed metal faces, architectural hollow openings and exquisite realistic thickness. Lower base dissolves into shadow near lower right; behind it, a broad immense graphite-metal arc crosses diagonally from upper right toward lower center, barely lit, adding depth and kinetic energy without clutter or resembling interior architecture. Left 45% almost black clean tonal space for large homepage text. Premium dark graphite and platinum palette only, bright silver-white highlights and layered charcoal shadows, cinematic but restrained. World-class 3D product visualization with ray traced global illumination, huge soft studio strip reflections emphasizing volume, near-black background gradient with subtle mist-free light falloff. Tasteful high-end athletic triumph and permanence, not a royal decoration. No people, crowds, photography, tiny objects, marble plinths, gold, gems, flames, excessive particles, smoke, neon, stars, glass shards, text, logo, watermarks, UI. Art direction should feel monumental yet balanced and light, not crude giant poker chip.
